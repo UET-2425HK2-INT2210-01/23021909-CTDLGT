@@ -1,0 +1,7 @@
+| Chuỗi                   | Phân tích                                                      |  Khớp  |
+| ----------------------- | -------------------------------------------------------------- |------- |      
+| `<an xml tag>`          | Có dấu `<`, nhiều ký tự không phải `>`, kết thúc bằng `>`      |   ✅   |
+| `<opentag><closetag>`   | Biểu thức chỉ khớp một thẻ, không phải hai thẻ nối tiếp.       |   ❌   |
+| `</closetag>`           | Vẫn hợp lệ, ký tự `/` không bị cấm                             |   ✅   |
+| `<>`                    | Không hợp lệ vì giữa `<` và `>` không có **ít nhất một ký tự** |   ❌   |
+| `<with attribute=”77”>` | Có ký tự đặc biệt nhưng không phải `>`, vẫn hợp lệ             |   ✅   |

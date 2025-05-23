@@ -1,0 +1,6 @@
+| STT | Câu                       | Có "very" (ít nhất 1)? | Có "fat" (tùy chọn)?              | Có "tall" hoặc "ugly"? | Kết thúc " man"? | Kết luận     |
+| --- | ------------------------- | ---------------------- | --------------------------------- | ---------------------- | ---------------- | ------------ |
+| 1   | `very fat man`            | ✅ Có 1               | ✅ Có                              | ❌ Không có             | ✅                | ❌ Không khớp |
+| 2   | `fat tall man`            | ❌ Không có           | ✅ Có                              | ✅ Có ("tall")          | ✅                | ❌ Không khớp |
+| 3   | `very very fat ugly man`  | ✅ Có nhiều           | ✅ Có                              | ✅ Có ("ugly")          | ✅                | ✅ Khớp       |
+| 4   | `very very very tall man` | ✅ Có nhiều           | ❌ Không có (nhưng không bắt buộc) | ✅ Có ("tall")          | ✅                | ✅ Khớp       |

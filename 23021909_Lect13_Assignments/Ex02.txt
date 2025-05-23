@@ -1,0 +1,8 @@
+| Chuỗi             | Phân tích                                                        |   Khớp? |
+| ----------------- | ---------------------------------------------------------------- | ------- |
+| abc               | `a` + `b` (ký tự bất kỳ) + `c` (thuộc `[bc]+`) → Hợp lệ          |   ✅   |
+| abbbbbbbb         | `a` + `b` (ký tự bất kỳ) + `bbbbbbb` (toàn `b`, hợp `[bc]+`)     |   ✅   |
+| azc               | `a` + `z` (ký tự bất kỳ) + `c` → `c` thuộc `[bc]`                |   ✅   |
+| abcbcbcbc         | `a` + `b` + `cbcbcbc` → toàn `b`, `c` sau dấu `.`                |   ✅   |
+| ac                | `a` + `c` → thiếu phần `[bc]+` sau dấu `.` (không đủ ký tự)      |   ❌   |
+| azccbbbbcbccc     | `a` + `z` (.) + `ccbbbbcbccc` → toàn các chữ `b` hoặc `c` sau đó |   ✅   |
